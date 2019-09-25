@@ -29,18 +29,18 @@ export class Footer extends React.Component<any, any> {
     return <footer>
       <div style={top}>
         <div style={iconWrapper}>
-          <a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"
-             href="https://www.linkedin.com/company/serbian-case-for-space/">
-            <i className="fab fa-linkedin" />
-          </a>
-          <a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"
-             href="https://www.facebook.com/serbiancaseforspace/">
-            <i className="fab fa-facebook" />
-          </a>
-          <a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"
-             href="mailto:info@serbiancaseforspace.com">
-            <i className="far fa-envelope" />
-          </a>
+          {/*<a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"*/}
+          {/*   href="https://www.linkedin.com/company/serbian-case-for-space/">*/}
+          {/*  <i className="fab fa-linkedin" />*/}
+          {/*</a>*/}
+          {/*<a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"*/}
+          {/*   href="https://www.facebook.com/serbiancaseforspace/">*/}
+          {/*  <i className="fab fa-facebook" />*/}
+          {/*</a>*/}
+          {/*<a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"*/}
+          {/*   href="mailto:info@serbiancaseforspace.com">*/}
+          {/*  <i className="far fa-envelope" />*/}
+          {/*</a>*/}
         </div>
       </div>
       <div style={bottom} />

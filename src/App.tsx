@@ -22,9 +22,9 @@ const App: React.FC = () => {
           atActive={{opacity: 1}}
         >
           <Route path='/' exact component={Home} />
-          <Route path='/team' exact component={Team} />
-          <Route path='/contact' exact component={Contact} />
-          <Route path='/blog' exact component={Blog} />
+          {/*<Route path='/team' exact component={Team} />*/}
+          {/*<Route path='/contact' exact component={Contact} />*/}
+          {/*<Route path='/blog' exact component={Blog} />*/}
         </AnimatedSwitch>
         <Footer />
       </Router>
