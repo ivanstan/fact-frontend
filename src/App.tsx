@@ -1,9 +1,7 @@
 import React from 'react';
 import 'animate.css/animate.min.css';
 import ScrollToTop from "react-router-scroll-top";
-
 import {HashRouter as Router, Route} from 'react-router-dom';
-
 import {Header} from './components/header';
 import {Footer} from './components/footer';
 import {Home} from './pages/home';

@@ -32,7 +32,7 @@ export class BlogPost extends React.Component<any, any> {
 
   componentDidMount(): void {
     BlogService.getPosts().then((posts: any) => {
-      posts.map((post: any) => {
+      posts.forEach((post: any) => {
         if (post.nid[0].value === parseInt(this.props.match.params.id)) {
           this.setState({post})
         }
