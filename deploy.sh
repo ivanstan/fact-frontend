@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 yarn build
 git subtree split --prefix build -b gh-pages # create a local gh-pages branch containing the splitted output folder
 git push origin --delete gh-pages
