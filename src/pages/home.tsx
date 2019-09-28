@@ -1,58 +1,57 @@
 import React from 'react';
+import {Teaser} from "../components/teaser";
 import {Link} from "react-router-dom";
-import ScrollAnimation from 'react-animate-on-scroll';
 
-const image = {
-  backgroundImage: 'url(/images/front-page.jpg)',
-  backgroundSize: 'cover',
-  height: '100vh',
-  position: 'relative' as 'relative',
+const featured = {
+  background: '#d0f0c0',
 };
 
-export const title = {
-  fontSize: 84,
-  color: '#fff',
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  transform: 'translateY(-50%)',
+const runningTitle = {
   textAlign: 'center' as 'center',
-  width: '100%'
+  fontWeight: 'bold' as 'bold',
 };
 
-const lead = {
-  textAlign: 'center' as 'center',
+const button = {
+  width: 130,
+};
+
+const buttonWrapper = {
+  width: 270,
+  margin: 'auto',
 };
 
 export class Home extends React.Component<any, any> {
 
   public render() {
     return <div className="mb-5">
+
+      <div style={featured} className="py-5 mb-5">
+
+        <div className="container mt-5 mb-4">
+          <p style={runningTitle}>
+            We offer research based on data collected by drone, multispectral cameras and sensors to farmers,
+            agribusiness
+            companies, public and NGO sector, which help them to assess what types of crops and trees are the most
+            suitable for their estates. We monitor crops and trees in order to maximize yields and profits.
+          </p>
+        </div>
+        <div style={buttonWrapper} className="mt-4">
+          <Link style={button} className="btn btn-secondary d-inline-block mr-2" to={'/team'}>Team</Link>
+          <Link style={button} className="btn btn-secondary d-inline-block" to={'/blog'}>Blog</Link>
+        </div>
+      </div>
+
       <div className="container mb-5">
-        {/*<div className="col-lg-6 mb-5">*/}
-        {/*  <ScrollAnimation animateIn="fadeIn" duration={1}>*/}
-        {/*    <Link to={'/about'} className="zoom-container mb-4">*/}
-        {/*      <img width="100%" className="mb-5" src="/images/about.jpg" alt="About"/>*/}
-        {/*    </Link>*/}
-        {/*    <h4 className="h5 text-center">ABOUT</h4>*/}
-        {/*    <p className="text-center">Find out about our organization, mission, and our*/}
-        {/*      projects</p>*/}
-        {/*    <Link className="d-block text-center mx-auto" to={'/about'} style={{width: 85}}>Learn*/}
-        {/*      More</Link>*/}
-        {/*  </ScrollAnimation>*/}
-        {/*</div>*/}
-        {/*<div className="col-lg-6 mb-5">*/}
-        {/*  <ScrollAnimation animateIn="fadeIn" duration={1}>*/}
-        {/*    <Link to={'/blog'} className="zoom-container mb-4">*/}
-        {/*      <img width="100%" className="mb-5" src="/images/blog.jpg" alt="Blog"/>*/}
-        {/*    </Link>*/}
-        {/*    <h4 className="h5 text-center">BLOG</h4>*/}
-        {/*    <p className="text-center">Read the latest news concerning space community and*/}
-        {/*      industry</p>*/}
-        {/*    <Link className="d-block text-center mx-auto" to={'/blog'} style={{width: 205}}>Find*/}
-        {/*      Out*/}
-        {/*      Now</Link>*/}
-        {/*  </ScrollAnimation>*/}
-        {/*</div>*/}
+        <Teaser title='Forestry' image="/images/forestry.jpg" link="/forestry">
+          Natural, semi-natural and planted forests are more vulnerable due to climate change. In the summer 2019 wild
+          fires destroyed billions of trees
+          worldwide, even in Amazon and in Siberia. Forest monitoring can avoid disasters like that.
+        </Teaser>
+        <Teaser title='Agriculture' image="/images/agriculture.jpg" link="/agriculture">
+          Due to climate change risk of flood and drought is increasing in Serbia. Natural disasters cause crop loss
+          and financial losses. Yield in years without natural disasters should be higher to compensate losses in
+          previous and coming years.
+        </Teaser>
       </div>
     </div>;
   }

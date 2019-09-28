@@ -1,5 +1,4 @@
 import React from 'react';
-import {title} from "./home";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const image = {
@@ -25,7 +24,7 @@ export class About extends React.Component<any, any> {
   public render() {
     return <div className="mb-5">
       <div style={image} className="mb-5">
-        <h2 style={title}>WHAT WE DO</h2>
+        <h2>WHAT WE DO</h2>
       </div>
 
       <div className="container mb-5">

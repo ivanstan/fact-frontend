@@ -1,26 +1,26 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import {Contact} from "./contact";
 
 const top = {
-  backgroundColor: '#363636'
+  backgroundColor: '#363636',
+  color: '#d0f0c0',
 };
 
 const bottom = {
   backgroundColor: '#1f1f1f',
-  height: 128
+  color: '#d0f0c0',
+  textAlign: 'center' as 'center',
 };
 
-const iconWrapper = {
-  width: 210,
-  margin: 'auto',
+const link = {
+  color: '#d0f0c0',
+  textDecoration: 'underline',
 };
 
-const icon = {
-  color: '#fff',
-  transition: 'opacity 170ms ease-in-out',
-  padding: '1em',
-  lineHeight: '1em',
-  fontSize: 24,
-  display: 'inline-block',
+const ul = {
+  listStyle: 'none',
+  padding: 0,
 };
 
 export class Footer extends React.Component<any, any> {
@@ -28,22 +28,37 @@ export class Footer extends React.Component<any, any> {
   public render() {
     return <footer>
       <div style={top}>
-        <div style={iconWrapper}>
-          {/*<a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"*/}
-          {/*   href="https://www.linkedin.com/company/serbian-case-for-space/">*/}
-          {/*  <i className="fab fa-linkedin" />*/}
-          {/*</a>*/}
-          {/*<a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"*/}
-          {/*   href="https://www.facebook.com/serbiancaseforspace/">*/}
-          {/*  <i className="fab fa-facebook" />*/}
-          {/*</a>*/}
-          {/*<a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"*/}
-          {/*   href="mailto:info@serbiancaseforspace.com">*/}
-          {/*  <i className="far fa-envelope" />*/}
-          {/*</a>*/}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 py-5">
+              <h2>Sitemap</h2>
+              <ul style={ul} className="mt-3">
+                <li>
+                  <Link to={'/'} style={link}>Home</Link>
+                </li>
+                <li className="ml-1">
+                  <Link to={'/agriculture'} style={link}>Agriculture</Link>
+                </li>
+                <li className="ml-1">
+                  <Link to={'/forestry'} style={link}>Forestry</Link>
+                </li>
+                <li>
+                  <Link to={'/team'} style={link}>Team</Link>
+                </li>
+                <li>
+                  <Link to={'/blog'} style={link}>Blog</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6 py-5">
+              <Contact/>
+            </div>
+          </div>
         </div>
       </div>
-      <div style={bottom} />
+      <div style={bottom} className="py-3">
+        Copyright © {window.location.hostname} {new Date().getFullYear()}
+      </div>
     </footer>;
   }
 }

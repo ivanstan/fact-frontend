@@ -1,4 +1,5 @@
 import React from 'react';
+import {PageTitle} from "../components/page-title";
 
 const image = {
   backgroundImage: 'url(/images/blog-big.jpg)',
@@ -21,9 +22,7 @@ export class Blog extends React.Component<any, any> {
 
   public render() {
     return <div className="mb-5">
-      <div style={image} className="mb-5">
-        <h2 style={title}>BLOG</h2>
-      </div>
+      <PageTitle>Blog</PageTitle>
       <div className="container mb-5">
         <div className="row mb-5">
 
