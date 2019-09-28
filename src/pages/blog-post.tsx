@@ -24,8 +24,10 @@ export class BlogPost extends React.Component<any, any> {
     return <div className="mb-5" style={{overflow: 'hidden'}}>
       <PageTitle>{post.title[0].value}</PageTitle>
       <div style={image}/>
+      <div className="container">
       <div className="row mb-5">
-        <div className="col-12 col-lg-8 mx-auto mt-5" dangerouslySetInnerHTML={{__html: post.body[0].value}}/>
+        <div className="col-12 col-lg-8 mx-auto mt-5 pl-2 pr-2" dangerouslySetInnerHTML={{__html: post.body[0].value}}/>
+      </div>
       </div>
     </div>;
   }

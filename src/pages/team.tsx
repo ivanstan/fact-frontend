@@ -7,7 +7,7 @@ export class Team extends React.Component<any, any> {
   public render() {
     return <div className="mb-5">
       <PageTitle>Team</PageTitle>
-      <div className="container my-5">
+      <div className="container my-md-5">
         <div className="row">
           <div className="col-12 col-lg-8 mx-auto">
             <Member name={'Tijana Lezaic'} image={'/images/team/tijana-lezaic.jpg'}>
