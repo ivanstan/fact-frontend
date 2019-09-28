@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 import {Contact} from "./contact";
 
 const top = {
-  backgroundColor: '#363636',
+  backgroundColor: '#58595b',
   color: '#d0f0c0',
 };
 
 const bottom = {
-  backgroundColor: '#1f1f1f',
+  backgroundColor: '#3A3B3D',
   color: '#d0f0c0',
   textAlign: 'center' as 'center',
 };

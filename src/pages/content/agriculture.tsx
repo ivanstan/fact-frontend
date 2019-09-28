@@ -4,8 +4,11 @@ import {Url} from "../../components/url";
 
 export class Agriculture extends Content {
 
-  protected content = <div>
-    <h1>Agriculture</h1>
+  protected title = 'Agriculture';
+
+  protected image = '/images/agriculture_full.jpg';
+
+  protected content = <div className="px-2 mt-5">
     <p>
       Due to climate change risk of flood and drought is increasing in Serbia. Natural disasters cause crop loss
       and financial losses. Yield in years without natural disasters should be higher to compensate losses in

@@ -27,7 +27,10 @@ export class Home extends React.Component<any, any> {
 
       <div style={featured} className="py-5 mb-5">
 
-        <div className="container mt-5 mb-4">
+        <div className="container mb-4">
+          <div style={{width: 200}} className="mx-auto">
+          <img src="/images/logo.png" alt="logo" width="100%"/>
+          </div>
           <p style={runningTitle}>
             We offer research based on data collected by drone, multispectral cameras and sensors to farmers,
             agribusiness

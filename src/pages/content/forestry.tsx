@@ -4,8 +4,11 @@ import {Url} from "../../components/url";
 
 export class Forestry extends Content {
 
-  protected content = <div>
-    <h1>Forestry</h1>
+  protected title = 'Forestry';
+
+  protected image = '/images/forestry_full.jpg';
+
+  protected content = <div className="px-2 mt-5">
     <p>Natural, semi-natural and planted forests are more vulnerable due to climate change. In the summer 2019 wild
       fires destroyed billions of trees
       worldwide, even in Amazon and in Siberia. Forest monitoring can avoid disasters like that.</p>

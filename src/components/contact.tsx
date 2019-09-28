@@ -17,7 +17,7 @@ export class Contact extends React.Component {
         <textarea rows={5} className="form-control" name="message" id="message" required placeholder="Message"/>
       </div>
 
-      <input className="btn btn-success" type="submit" value="Submit" style={{width: '100%'}}/>
+      <input className="btn btn-primary" type="submit" value="Submit" style={{width: '100%'}}/>
     </form>
   }
 }

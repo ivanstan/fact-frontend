@@ -1,5 +1,6 @@
 import React from 'react';
 import 'animate.css/animate.min.css';
+import ScrollToTop from "react-router-scroll-top";
 
 import {HashRouter as Router, Route} from 'react-router-dom';
 
@@ -10,11 +11,13 @@ import {Team} from './pages/team';
 import {Blog} from './pages/blog';
 import {Agriculture} from "./pages/content/agriculture";
 import {Forestry} from "./pages/content/forestry";
+import {BlogPost} from "./pages/blog-post";
 
 const App: React.FC = () => {
   return (
     <div className='flex-wrapper'>
       <Router>
+        <ScrollToTop>
         <Header/>
         {/*<AnimatedSwitch*/}
         {/*  atEnter={{opacity: 0}}*/}
@@ -26,8 +29,10 @@ const App: React.FC = () => {
           <Route path='/blog' exact component={Blog}/>
           <Route path='/agriculture' exact component={Agriculture}/>
           <Route path='/forestry' exact component={Forestry}/>
+          <Route path='/blog/:id' exact component={BlogPost}/>
         {/*</AnimatedSwitch>*/}
         <Footer/>
+        </ScrollToTop>
       </Router>
     </div>
   );
