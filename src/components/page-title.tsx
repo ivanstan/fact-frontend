@@ -7,7 +7,7 @@ const wrapper = {
 export class PageTitle extends React.Component {
   render():any {
     return <div style={wrapper} className="py-3 pl-3">
-      <h1>{this.props.children}</h1>
+      <h1 className="mb-0">{this.props.children}</h1>
     </div>;
   }
 }
