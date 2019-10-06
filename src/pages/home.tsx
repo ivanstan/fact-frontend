@@ -29,7 +29,7 @@ export class Home extends React.Component<any, any> {
 
         <div className="container mb-4">
           <div style={{width: 200}} className="mx-auto">
-          <img src="/images/logo.png" alt="logo" width="100%"/>
+            <img src="/images/logo.png" alt="logo" width="100%"/>
           </div>
           <p style={runningTitle}>
             We offer research based on data collected by drone, multispectral cameras and sensors to farmers,
@@ -54,6 +54,11 @@ export class Home extends React.Component<any, any> {
           Due to climate change risk of flood and drought is increasing in Serbia. Natural disasters cause crop loss
           and financial losses. Yield in years without natural disasters should be higher to compensate losses in
           previous and coming years.
+        </Teaser>
+        <Teaser title='Our solutions' image="/images/solutions.jpg" link="/solutions">
+          FACT offers all kinds of spatial analysis. Combining satellite and drone data FACT analyses the
+          environment and gives to customers the information how to make the biggest profit on their land. Do
+          you have a parcel?
         </Teaser>
       </div>
     </div>;

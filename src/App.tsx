@@ -10,6 +10,7 @@ import {Blog} from './pages/blog';
 import {Agriculture} from "./pages/content/agriculture";
 import {Forestry} from "./pages/content/forestry";
 import {BlogPost} from "./pages/blog-post";
+import {Solutions} from "./pages/content/solutions";
 
 const App: React.FC = () => {
   return (
@@ -25,8 +26,9 @@ const App: React.FC = () => {
           <Route path='/' exact component={Home}/>
           <Route path='/team' exact component={Team}/>
           <Route path='/blog' exact component={Blog}/>
-          <Route path='/agriculture' exact component={Agriculture}/>
           <Route path='/forestry' exact component={Forestry}/>
+          <Route path='/agriculture' exact component={Agriculture}/>
+          <Route path='/solutions' exact component={Solutions}/>
           <Route path='/blog/:id' exact component={BlogPost}/>
         {/*</AnimatedSwitch>*/}
         <Footer/>
