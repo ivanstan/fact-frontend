@@ -24,9 +24,14 @@ export class Team extends React.Component<any, any> {
               agriculture.
             </Member>
             <Member name={'Marko Pajovic'} image={'/images/team/marko-pajovic.jpg'}>
-              Marko Pajovic is a freelance researcher with a focus on international relations, EU, and industrial
-              policies. Additionally, he is a business developer for a gaming company "Demagog Studio" and a private
-              company "Villa PM". He graduated at the Faculty of Law, University of Belgrade.
+              Marko Pajovic is a freelance researcher with a focus on international relations, EU, and space policies.
+              In 2017 he founded Serbian Case for Space Foundation which acts as an independent platform for developing
+              national space policies and strategies. In 2018 he attended an International Astronautical Congress in
+              Bremen, where he presented a paper on the issue of legal use of satellite data: Case of Republic of
+              Serbia. He is also one of the executive members on project "Forest and Climate" which won several awards
+              both domestic and international. In 2019, together with a group of colleagues, he initiated the "SpaceHub"
+              project in Belgrade, which specializes in space-related activities. Also, he has an experience in human
+              rights watch since he coordinated with NGOs in Serbia on different projects regarding this issue.
             </Member>
             <Member name={'Ivan Stanojevic'} image={'/images/team/ivan-stanojevic.jpg'}>
               Ivan Stanojevic is a software engineer working for Byteout Software. There he has gathered a team of
